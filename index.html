@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Rural Hill Events Website
+design & development by Erin McCarthy
+www.erinbmccarthy.com (c) 2017 -->
+
+<html>
+<!-- begin HTML -->
+
+<head>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <!--javascript & jquery fade in effect -->
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $("body").css("display", "none");
+
+      $("body").fadeIn(1000);
+
+      $("a.transition").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(1000, redirectPage);
+      });
+
+      function redirectPage() {
+          window.location = linkLocation;
+      }
+  });
+  </script>
+
+<!-- begin HEAD : metadata, charencoding
+title, stylesheets, scripts, googlefonts. -->
+
+<meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" type="text/css" href="css/nav.css">
+ <link rel="stylesheet" type="text/css" href="css/global.css">
+ <script src="js/script.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Tinos" rel="stylesheet">
+
+
+
+
+</head>
+<!--end head -->
+
+<body>
+
+<!-- begin body -->
+
+<div id="logo">
+  <a href="index.html"><img class="logo" src="img/Blue_Logo.svg"></a>
+  <h3>Historic Rural Hill</h3>
+  <h4>4431 Neck Road</h4>
+  <h4>Huntersville, NC 28078</h4><br>
+</div>
+<div id='wrapper'>
+<div id='cssmenu'>
+<ul>
+   <li><a href='index.html' class="transition">Cultural Center</a></li>
+   <li class='active'><a href='info.html' class="transition">Information</a>
+      <ul>
+         <li><a href='directions.html' class="transition">Directions</a>
+         <li><a href='vendors.html' class="transition">Vendors</a></li>
+         <li><a href='contact.html' class="transition">Contact</a></li>
+      </ul>
+   </li>
+   <li class='active'><a href='weddings.html' class="transition">Weddings</a>
+      <ul>
+         <li><a href='policies.html' class="transition">Policies</a></li>
+         <li><a href='features.html' class="transition">Features &amp; Amenities</a></li>
+         <li><a href='vendors.html' class="transition">Vendors</a></li>
+         <li><a href='gallery.html' class="transition">Gallery</a></li>
+      </ul>
+   </li>
+   <li><a href='meet_events.html' class="transition">Meetings &amp; Events</a></li>
+   <li><a href='gallery.html' class="transition">Gallery</a></li>
+</ul>
+</div>
+
+<div class ="hero">
+<img class =" heroimg" src = 'img/HomePhoto.jpg'>
+</div>
+
+
+
+<!--end body -->
+
+</html>
+<!--end html-->
