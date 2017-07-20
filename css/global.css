@@ -135,7 +135,7 @@ h4 {
   margin-left: 12%;
   height: 50%;
   /*background-color: moccasin;*/
-  outline: solid 1pt moccasin;
+  /*outline: solid 1pt moccasin;*/
   float: left;
 }
 
@@ -201,6 +201,15 @@ a:hover {
   background-color: lightgrey;
   height: 1px;
 }*/
+
+p {
+  color: grey;
+  font-family: 'Tinos', 'Times New Roman', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 5%;
+
+}
 
 .footer-rule {
 	border-top: 1px dashed #A8D5E2;
