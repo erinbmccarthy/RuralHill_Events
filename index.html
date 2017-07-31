@@ -81,52 +81,54 @@ title, stylesheets, scripts, googlefonts. -->
 </div>
 
 <div class="container">
-<div class ="hero">
-<img class =" heroimg" src = 'img/HomePhoto.jpg'>
+<div id = "slideshow" class ="hero">
+    <div><img class =" heroimg" src = 'img/HomePhoto.jpg'></div>
+    <div><img class="heroimg" src="img/weddings_hero_1.jpg"></div>
+    <div><img class="heroimg" src="img/about_hero_1.jpg"></div>
 </div>
 
 <div class="welcome1"><img class="welcome-1" src="img/RH_Welcome.svg"></div>
 <div class="charm">
 A rural and charming event venue with modern amenities<br><br><br>
-<hr class= "footer-rule"><br>
+<hr class= "footer-rule">
 </div>
 
-
-
-<div id="slideshow">
-    <div>
-    <img class ="slidecontain" src="img/about_hero_1.jpg">
-    </div>
-    <div>
-    <img class ="slidecontain" src="img/KK9A0561.jpg">
-    </div>
-    <div>
-    <img class ="slidecontain" src="img/KK9A0985.jpg">
-    </div>
-    <div>
-    <img class ="slidecontain" src="img/Jenny-Ben-Rural-Hill-NC-Engagement-6954_WEB.jpg">
-    </div>
-    <div>
-    <img class ="slidecontain" src="img/download-6.jpg">
-    </div>
-</div>
 <script>
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(1000)
+    .fadeOut(3000)
     .next()
-    .fadeIn(1000)
+    .fadeIn(3000)
     .end()
     .appendTo('#slideshow');
-},  3000);
+},  6000);
 </script>
+<div class="left-2"><br>
+<div class="textpad"><h5>Host your event at the new Rural Hill Cultural Center</h5>
+<p>This beautiful structure is inspired by the lofty barns that once dotted the area’s rural landscape, blending into our surrounding 265 acre farmland in a graceful manner. The Rural Hill Cultural Center and farm offers a unique combination of flexible indoor and outdoor spaces for a variety of gatherings...<i>weddings, receptions, reunions, cultural &amp; educational programs, business retreats, and more!</i><br><br>With more than 4,000 square feet the Rural Hill Cultural Center features 2,000sf in the charming May Davidson Hall, a Scottish Heritage Library, catering kitchen, aptly appointed restrooms, audio/visual amenities, spacious covered patio and more.<br><br>We invite you to come see how Rural Hill can provide the perfect setting for you and your guests. Contact us today to schedule a personal tour and site visit:</p></div>
+<button>Let's Talk About Your Event &amp; Schedule a Tour</button>
+    
+    </div>
+<div class="right-1">
+    <div class="circle">
+    <img class="in-circle" src="img/RH_Magnolia.svg">
+    </div>
+    <div class="circlelink">Centuries-Old magnolias dot much of Rural Hill's Historic Landscape<br><a class= "circle-link" href="GALLERY.html">&rarr; SEE More</a></div>
+    <div class="circle">
+    <img class="in-circle" src="img/RH_NC.svg"></div>
+    <div class="circlelink">Over 250 years of North
+        Carolina history <br><a class= "circle-link" href="info.html">&rarr; Learn More</a></div>
+    <div class="circle">
+    <img class="in-circle" src="img/RH_event.svg"></div>
+    <div class="circlelink">Modern amenities and access to vendors <br><a class= "circle-link" href="info.html">&rarr; Learn More</a></div>
+</div>
+<div class = "footer"></div>
+    </div>
 
-<div class="left-2"></div>
-<div class="right-1"></div>
     </div>
-    </div>
+
     </body>
 </html>
     
