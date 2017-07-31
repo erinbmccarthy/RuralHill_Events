@@ -85,59 +85,50 @@ title, stylesheets, scripts, googlefonts. -->
 <img class =" heroimg" src = 'img/HomePhoto.jpg'>
 </div>
 
-<div class="welcome1">
-<br>
-<h1>Welcome</h1><br>
-<h2>A rural and charming event venue with modern amenities</h2><BR><BR>
-<!--<hr class= "footer-rule"><br>--></DIV>
-
-
-<div class="leftwrap1">
-<p>Host your event at the new Historic Rural Hill Cultural Center!<br><br>
-This beautiful structure is inspired by the lofty barns that once dotted the area’s rural landscape,
- blending into our surrounding 265 acre farmland in a graceful manner. The Rural Hill Cultural Center
- and farm offers a unique combination of flexible indoor and outdoor spaces for a variety of gatherings
-
-•	weddings,
-•	receptions,
-•	reunions,
-•	cultural & educational programs,
-•	business retreats
-...and your event!
-<br><br>
-With more than 4,000 square feet the Rural Hill Cultural Center features 2,000sf in the charming May Davidson Hall, a Scottish Heritage Library, catering kitchen, aptly appointed restrooms, audio/visual amenities, spacious covered patio and more.
-<br><br>
-We invite you to come see how Rural Hill can provide the perfect setting for you and your guests. Contact us today to schedule a personal tour and site visit</P></div>
-<div class="rightwrap1">note -Centuries old magnolias (LEARN MORE -> AMENITIES)</div>
-<div class="rightwrap1">note -Historical landscape of North Carolina (LEARN MORE -> HISTORY)</div>
-<div class="rightwrap1">note-Pastoral Landscapes, etc, etc, (SEE MORE -> GALLERY)</div>
-<div class="footer">
+<div class="welcome1"><img class="welcome-1" src="img/RH_Welcome.svg"></div>
+<div class="charm">
+A rural and charming event venue with modern amenities<br><br><br>
 <hr class= "footer-rule"><br>
-<a href="index.html">Historic Rural Hill Cultural Center</a> |
-<a href="info.html">Information</a> |
-<a href="directions.html">Directions</a> |
-<a href="vendors.html">Vendors</a> |
-<a href="contact.html">Contact</a> |
-<a href="weddings.html">Weddings</a> |
-<a href="policies.html">Policies</a> |
-<a href="amenities.html">Amenities</a> |
-<a href="vendors.html">Vendors</a> |
-<a href="gallery.html">Gallery</a> |
-<a href="meet_events.html">Meetings &AMP; Events</a> |
-<a href="http://www.ruralhill.net/">Historic Rural Hill &amp; Cultural Center Main Site</a> |
-<a href="http://www.ruralhillscottishfestivals.net/Historic">Rural Hill Scottish Festival and Highland Games</a> |
-<a href="http://www.ncbrewersandmusic.com/">North Carolina Brewers and Music Festival</a> |
-<a href="http://www.ruralhill.net/SheepdogTrials.asp">Rural Hill Sheepdog Trials &amp; Dog Festival</a> |
-<a href="http://www.ruralhill.net/AmazingMaizeMaze.asp">Rural Hill Amazing Maize Maze</a><br><br>
-<hr class= "footer-rule"><br>
-
 </div>
 
-<!--end body -->
-<div class = "social-footer">SOCIAL MEDIA LINKS HERE<br>
-  &copy; RURAL HILL CULTURAL CENTER 2017<br><br>
-  <span style="font-size: 0.3em">SITE DESIGN &amp; DEVELOPMENT <A HREF="erinbmccarthy.com">Erin McCarthy Creative</a></span></div>
 
-</div> <!--end container-->
+
+<div id="slideshow">
+    <div>
+    <img class ="slidecontain" src="img/about_hero_1.jpg">
+    </div>
+    <div>
+    <img class ="slidecontain" src="img/KK9A0561.jpg">
+    </div>
+    <div>
+    <img class ="slidecontain" src="img/KK9A0985.jpg">
+    </div>
+    <div>
+    <img class ="slidecontain" src="img/Jenny-Ben-Rural-Hill-NC-Engagement-6954_WEB.jpg">
+    </div>
+    <div>
+    <img class ="slidecontain" src="img/download-6.jpg">
+    </div>
+</div>
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+</script>
+
+<div class="left-2"></div>
+<div class="right-1"></div>
+    </div>
+    </div>
+    </body>
 </html>
-<!--end html-->
+    
+
+    

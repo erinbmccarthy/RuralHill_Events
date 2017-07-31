@@ -1,8 +1,10 @@
 /* reset the CSS here */
-
+    $slides: 4;
+    $time_per_slide: 4;
+    $total_animation_time: $time_per_slide * $slides;
 * {
   margin: 0;
-  /*outline: 1pt solid pink;*/
+/*  outline: 1pt solid lightpink;*/
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Tinos');
 
@@ -29,16 +31,18 @@ body { display: none; }
 }
 
 .hero {
-  background-color: skyblue;
+/*  background-color: skyblue;*/
   background-repeat: no-repeat;
   background-size: contain;
-  height: 400px;
-  width: 100%;
+  height: 450px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
   z-index: 1;
 }
 
 .heroimg {
-  height: 400px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: -1;
@@ -91,22 +95,6 @@ h4 {
   padding: 2px;
 }
 
-.byline {
-  z-index: 99999;
-  vertical-align: center;
-  font-family: 'Tinos', 'Helvetica', sans-serif;
-  /*font-style: italic;*/
-  color: lightgrey;
-  font-size: 1.5em;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-align: center;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 20px;
-}
-
 .container {
   height: 100%;
   width: 100%;
@@ -128,28 +116,7 @@ h4 {
 
 }
 
-.leftwrap1 {
-  width: 50%;
-  /*margin: 5%;*/
-  margin-top: 3%;
-  margin-left: 12%;
-  height: 50%;
-  /*background-color: moccasin;*/
-  /*outline: solid 1pt moccasin;*/
-  float: left;
-}
 
-.rightwrap1 {
-  width: 175px;
-  margin-right: 18%;
-  margin-top: 3%;
-  /*margin: 5%;*/
-  /*outline: solid 1pt moccasin;*/
-  height: 175px;
-  border-radius: 50%;
-  background-color: #A8D5E2;
-  float: right;
-}
 
 .welcome1 {
   width: 70%;
@@ -177,31 +144,8 @@ a:hover {
   -o-transition: all .25s ease;
   transition: all .25s ease;
 }
-.footer {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 3%;
-  margin-bottom: 1%;
-  /*background-color: skyblue;*/
-  height: 8%;
-  float: left;
-  font-family: 'Open Sans', 'Helvetica', sans-serif;
-  font-size: 0.6em;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  text-align: center;
-  color: lightgrey;
-  line-height: 1.8em;
-}
-/*hr {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: lightgrey;
-  background-color: lightgrey;
-  height: 1px;
-}*/
+
+
 
 p {
   color: grey;
@@ -216,9 +160,59 @@ p {
 	border-top: 1px dashed #A8D5E2;
 }
 
-.social-footer {
-  width: 100%;
-  height: 100px;
-  background-color: #a8d5e2;
-  float: left;
+
+.welcome-1 {
+    height: 40%;
+    width: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.charm {
+    margin-top: 15%;
+    margin-bottom: 3%;
+    font-family: 'Tinos', 'Times New Roman', serif;
+    font-size: 0.85em;
+    color: lightgrey;
+    text-transform: uppercase;
+    letter-spacing: 0.45em;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.slideshow{
+    margin-left: 10%;
+    height: 500px;
+    background-color: skyblue;
+    width: 25%;
+    float:left;
+    background-size: contain;
+    position: relative;
+}
+
+.slidecontain {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.slideshow > div >img {
+    position: absolute;
+}
+
+.left-2{
+    height:500px;
+    background-color: aquamarine;
+    width:35%;
+    float: left;
+}
+
+.right-1{
+    margin-right: 10%;
+    height: 500px;
+    background-color: azure;
+    width: 20%;
+    float: right;
 }
