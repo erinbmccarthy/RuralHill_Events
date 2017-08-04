@@ -102,10 +102,10 @@ h5 {
   font-size: 0.8em;
   /*font-style: italic;*/
   letter-spacing: 0.5em;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  color: gray;
+  color: lightgray;
   /*line-height: 2em;*/
 }
 
@@ -265,7 +265,6 @@ button {
     text-transform: uppercase;
     font-size: 0.8em;
     letter-spacing: 0.4em;
-    border: none;
     color: #a8d5e2;
     border: 2pt solid #a8d5e2;
     padding: 15px;
@@ -274,13 +273,13 @@ button {
     height: 10%;
     width: 70%;
     margin-left: 15%;
-    margin-right: 15%:
+    margin-right: 15%;
 }
 
 button:hover{
+
     background-color: #a8d5e2;
     color: white;
-    border: none;
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   -ms-transition: all .25s ease;
@@ -288,10 +287,77 @@ button:hover{
   transition: all .25s ease;
 }
 
-.footer {
-    margin-top: 10%;
+.footer1 {
+    margin-top: 0;
     height: 200px;
-    background-color: #a8d5e2;
+/*    background-color: #a8d5e2;*/
     width: 100%;
     float: left;
+    margin-bottom: 3%;
+}
+
+.links {
+/*    outline: 1pt solid pink;*/
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 35%;
+    margin-right: 35%;
+    
+}
+
+.vendor {
+    height: 25%;
+    width: 25%;
+    padding: 3.5%;
+}
+
+.footer2 {
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #a8d5e2;
+    float: left;
+}
+
+.footwrap {
+    color: white;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 0.5em;
+    line-height: 2em;
+}
+
+.footwrap > a {
+    color: white;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.social {
+    width: 20%;
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+#fa {
+    
+    font-size: 300%;
+    width:auto;
+    padding: 3%;
+    color: white;
+    text-align: center;
+}
+
+#fa:hover {
+    text-decoration: none;
+    opacity: 0.7;
 }
